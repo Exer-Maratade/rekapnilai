@@ -1,0 +1,59 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    background-color: #1B1B2E;
+    width: 290px;
+    padding: 24px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.main {
+    background-color: aquamarine;
+    flex-grow: 1;
+}
+
+.sidebar .header .list-item .description {
+    font-variant: small-caps;
+    font-style: normal;
+    font-weight: 700px;
+    font-size: 28px;
+    color: white;
+    padding: 20px;
+    /* margin-left: 50px; */
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+.sidebar .header .logospn {
+    display: flex;
+    width: 60px;
+    height: 70px;
+    margin-left: 70px;
+}
+
+.ilustration {
+    display: flexbox;
+    align-content: center;
+    justify-content: center;
+}
+
+.container .icon {
+    width: 63px;
+    height: 48px;
+    top: 30vh;
+}
+
+.sidebar .container .description {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 20px;
+    margin-top: 10vh;
+    font-weight: 100;
+}

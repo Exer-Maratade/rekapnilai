@@ -1,0 +1,74 @@
+html, body{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    min-width: 208vw;
+
+}
+
+.sidebar {
+    display: flex;
+    background-color: rgb(7, 22, 57);
+    width: 275px;
+    padding: 24px;
+    box-sizing: border-box;
+    flex-direction: column;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+
+.illustration {
+    margin-bottom: 20px;
+}
+
+.main-content {
+    background-color: #eeee;
+    height: 100vh;
+    width: 200vh;
+    text-transform: uppercase;
+}
+
+.nav-item {
+    font-style: normal;
+    font-family: 'Arial bold', Arial, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.description {
+    color: white;
+}
+
+.bi {
+    color: white;
+}
+
+.card {
+    margin-top: 5vh;
+    margin-left: 0px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card .card-subtitle{
+    text-transform: capitalize;
+}
+
+.grid {
+    margin-top: 0px;
+    margin-left: 0;
+    display: flex;
+    height: 10vh;
+    width: auto;
+    background-color: rgb(121, 121, 121);
+
+}
