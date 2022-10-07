@@ -37,7 +37,7 @@
                     <div class="nav">
 
                         <div class="nav-item mt-2">
-                            <a class="btn {{ Request::is('Siswa') ? 'text-primary' : '' }}" href="{{route('Siswa')}}">
+                            <a class="btn {{ Request::is('Siswa') ? 'text-primary' : '' }}" href="{{('Siswa')}}">
                                 <i class="bi bi-journal-bookmark-fill"></i>
                                 <span class="description"> Data Siswa</span>
                             </a>

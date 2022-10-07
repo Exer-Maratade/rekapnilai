@@ -4,9 +4,11 @@
     <thead class="thead table-dark">
         <tr>
             <th scope="col">No</th>
-            <th scope="col">Kode Mapel</th>
-            <th scope="col">Mata Pelajaran</th>
-            <th scope="col">Jam Pelajaran</th>
+            <th scope="col">Nama</th>
+            <th scope="col">Nrp</th>
+            <th scope="col">Pangkat</th>
+            <th scope="col">Jabatan</th>
+            <th scope="col">Pelajaran</th>
         </tr>
     </thead>
     <tbody>
