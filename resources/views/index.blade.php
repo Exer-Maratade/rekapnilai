@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
@@ -37,23 +37,21 @@
                     <div class="nav">
 
                         <div class="nav-item mt-2">
-                            <a class="btn {{ Request::is('Siswa') ? 'text-primary' : '' }}"
-                                href="Siswa">
+                            <a class="btn {{ Request::is('Siswa') ? 'text-primary' : '' }}" href="{{route('Siswa')}}">
                                 <i class="bi bi-journal-bookmark-fill"></i>
                                 <span class="description"> Data Siswa</span>
                             </a>
                         </div>
 
                         <div class="nav-item mt-2">
-                            <a class="btn {{ Request::is('Pelajaran') ? 'text-primary' : '' }}"
-                                href="{{route('Pelajaran')}}">
+                            <a class="btn {{ Request::is('Pelajaran') ? 'text-primary' : '' }}" href="{{ route('Pelajaran') }}">
                                 <i class="bi bi-speedometer"></i>
                                 <span class="description"> Mata Pelajaran</span>
                             </a>
                         </div>
 
                         <div class="nav-item mt-2">
-                            <a class="btn {{ Request::is('Input-Absen') ? 'text-primary' : '' }}">
+                            <a class="btn {{ Request::is('Gadik') ? 'text-primary' : '' }}" href="{{ route('Gadik') }}">
                                 <i class="bi bi-people-fill"></i>
                                 <span class="description"> Gadik</span>
                             </a>
@@ -82,7 +80,7 @@
                 <div class="list-item">
 
                     <div class="content">
-                        
+
                         @yield('content')
                         {{-- @include('layouts.NilaiSiswa') --}}
                     </div>
@@ -103,23 +101,8 @@
 
 
 
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
-    </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>
 
 </html>

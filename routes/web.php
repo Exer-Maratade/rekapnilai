@@ -23,3 +23,4 @@ route::get('/', [SiswaController::class, 'index'])->name('Siswa');
 
 route::get('/Siswa', [SiswaController::class, 'index'])->name('Siswa');
 route::get('/Pelajaran', [PelajaranController::class, 'LihatMapel'])->name('Pelajaran');
+route::get('/Gadik', [GadikController::class, 'ViewGadik'])->name('Gadik');

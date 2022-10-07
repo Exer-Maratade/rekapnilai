@@ -7,7 +7,7 @@ html, body{
 .container {
     display: flex;
     min-height: 100vh;
-    min-width: 208vw;
+    min-width: 100vw;
 
 }
 
@@ -71,4 +71,11 @@ html, body{
     width: auto;
     background-color: rgb(121, 121, 121);
 
+}
+
+.table{
+    position: fixed;
+    width: 80%;
+    margin-left: 10px;
+    margin-top: 10px;
 }

@@ -11,7 +11,7 @@ class SiswaController extends Controller
     public function index()
     {
         $Siswa = Siswa::all();
-        return view('layouts.Siswa',[
+        return view('layouts.Siswa', compact('Siswa'), [
             'Siswa' => '$Siswa',
             'title' => 'Nilai siswa',
             'active' => 'Nilai siswa'
