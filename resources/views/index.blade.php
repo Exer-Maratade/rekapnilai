@@ -16,7 +16,9 @@
     <link rel="stylesheet" href="/css/css.css">
 
 
-    <title>@yield('title')</title>
+
+
+    <title>{{isset($title) ? $title : ''}} </title>
 </head>
 
 <body>
@@ -29,7 +31,7 @@
                 <div class="list-item">
                     <a href="#" style="text-decoration: none">
                         <label class="description mb-3 justify-content-center">
-                            <h4 class="text-white">SPN POLDA SULUT</h4>
+                            <h4 class="text-dark">SPN POLDA SULUT</h4>
                         </label>
                         <img src="/img/presisi.png" alt="" class="icon" height="75px">
                     </a>
@@ -37,21 +39,27 @@
                     <div class="nav">
 
                         <div class="nav-item mt-2">
-                            <a class="btn {{ Request::is('Siswa') ? 'text-primary' : '' }}" href="{{('Siswa')}}">
+                            <a class="btn {{ Request::is('SelectSiswa') ? 'active text-primary' : '' }}" href="{{('SelectSiswa')}}">
+                                <i class="bi bi-journal-bookmark-fill"></i>
+                                <span class="description">Select Siswa</span>
+                            </a>
+                        </div>
+                        <div class="nav-item mt-2">
+                            <a class="btn {{ Request::is('Siswa') ? 'active text-primary' : '' }}" href="{{('Siswa')}}">
                                 <i class="bi bi-journal-bookmark-fill"></i>
                                 <span class="description"> Data Siswa</span>
                             </a>
                         </div>
 
                         <div class="nav-item mt-2">
-                            <a class="btn {{ Request::is('Pelajaran') ? 'text-primary' : '' }}" href="{{ route('Pelajaran') }}">
+                            <a class="btn {{ Request::is('Pelajaran') ? 'active text-primary' : '' }}" href="{{ route('Pelajaran') }}">
                                 <i class="bi bi-speedometer"></i>
                                 <span class="description"> Mata Pelajaran</span>
                             </a>
                         </div>
 
                         <div class="nav-item mt-2">
-                            <a class="btn {{ Request::is('Gadik') ? 'text-primary' : '' }}" href="{{ route('Gadik') }}">
+                            <a class="btn {{ Request::is('Gadik') ? 'active text-primary' : '' }}" href="{{ route('Gadik') }}">
                                 <i class="bi bi-people-fill"></i>
                                 <span class="description"> Gadik</span>
                             </a>
@@ -83,6 +91,7 @@
 
                         @yield('content')
                         {{-- @include('layouts.NilaiSiswa') --}}
+                        
                     </div>
                 </div>
             </div>

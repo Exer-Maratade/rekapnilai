@@ -14,6 +14,6 @@ class Siswa extends Model
     protected $guarded = ['id'];
 
     protected $fillable = [
-        'Name', 'Nosis', 'Pleton', 'Kompi'
+        'Name', 'Nosis', 'Pleton', 'Kompi','Angkatan', 'Tahun'
     ];
 }

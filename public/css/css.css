@@ -4,16 +4,22 @@ html, body{
     padding: 0px;
 }
 
+.main-content .main{
+    margin-top: 0px;
+    padding: 0px;
+    background-color:rgb(59, 131, 255);
+    height: 40vh;
+}
+
 .container {
     display: flex;
     min-height: 100vh;
     min-width: 100vw;
-
 }
 
 .sidebar {
     display: flex;
-    background-color: rgb(7, 22, 57);
+    background-color: rgb(205, 205, 205);
     width: 275px;
     padding: 24px;
     box-sizing: border-box;
@@ -42,13 +48,13 @@ html, body{
     font-size: 28px;
 }
 
-.description {
+/* .description {
     color: white;
 }
 
 .bi {
     color: white;
-}
+} */
 
 .card {
     margin-top: 5vh;
@@ -73,9 +79,9 @@ html, body{
 
 }
 
-.table{
-    position: fixed;
-    width: 80%;
-    margin-left: 10px;
-    margin-top: 10px;
+.card{
+    padding: 30px;
+    margin-left: 30px;
+    margin-right: 10px;
+    height: auto;
 }

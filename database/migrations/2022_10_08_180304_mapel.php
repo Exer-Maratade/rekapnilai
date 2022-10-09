@@ -13,16 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('siswa', function (Blueprint $table) {
+     
+        Schema::create('mapel', function (Blueprint $table) {
             $table->id();
-            $table->string('Name');
-            $table->string('Nosis');
-            $table->string('Pleton');
-            $table->string('Kompi');
-            $table->string('Angkatan');
-            $table->text('Tahun');
+            $table->string('Pelajaran');
+            $table->foreignId('gadik_id');
+            
             $table->timestamps();
         });
+         
     }
 
     /**
@@ -32,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-      
+        //
     }
 };

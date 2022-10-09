@@ -13,14 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('siswa', function (Blueprint $table) {
+        Schema::create('gadik', function (Blueprint $table) {
             $table->id();
             $table->string('Name');
-            $table->string('Nosis');
-            $table->string('Pleton');
-            $table->string('Kompi');
-            $table->string('Angkatan');
-            $table->text('Tahun');
+            $table->integer('Nrp')->unique();
+            $table->string('Pangkat');
+            $table->string('Jabatan');
+            // $table->foreignId('mapel_id');
             $table->timestamps();
         });
     }
@@ -32,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-      
+        //
     }
 };

@@ -1,8 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GadikController;
+use App\Http\Controllers\MapelController;
 use App\Http\Controllers\SiswaController;
-use App\Http\Controllers\PelajaranController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -19,8 +21,9 @@ use App\Http\Controllers\PelajaranController;
 //     return view('index');
 // });
 
-route::get('/', [SiswaController::class, 'index'])->name('Siswa');
+route::get('/', [SiswaController::class, 'SelectSiswa'])->name('SelectSiswa');
 
+route::get('/SelectSiswa', [SiswaController::class, 'SelectSiswa'])->name('SelectSiswa');
 route::get('/Siswa', [SiswaController::class, 'index'])->name('Siswa');
-route::get('/Pelajaran', [PelajaranController::class, 'LihatMapel'])->name('Pelajaran');
-route::get('/Gadik', [GadikController::class, 'ViewGadik'])->name('Gadik');
+route::get('/Pelajaran', [MapelController::class, 'LihatMapel'])->name('Pelajaran');
+route::get('/Gadik', [GadikController::class, 'LihatGadik'])->name('Gadik');

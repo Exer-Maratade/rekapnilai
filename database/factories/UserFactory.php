@@ -17,6 +17,15 @@ class UserFactory extends Factory
      */
     public function definition()
     {
+
+        // return [
+        //     'Name' => fake()->name(),
+        //     'Nrp' => fake()->Nrp(),
+        //     'Pangkat' => fake()->Pangkat(),
+        //     'Jabatan' => fake()->Jabatan(),
+        // ];
+
+
         return [
             'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
